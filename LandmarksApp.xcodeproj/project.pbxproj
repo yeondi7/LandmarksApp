@@ -88,12 +88,12 @@
 		06C146732BEDF1FF002D9D7F /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				06C1466D2BEDE1F3002D9D7F /* MapView.swift */,
-				06C1466B2BEDC926002D9D7F /* CircleImage.swift */,
 				064DF1512BEDC38700A3E260 /* ContentView.swift */,
-				066D1B5B2BEDFB0D00ACC1FE /* LandmarkDetail.swift */,
+				06C1466B2BEDC926002D9D7F /* CircleImage.swift */,
+				06C1466D2BEDE1F3002D9D7F /* MapView.swift */,
 				06C146762BEDF2BE002D9D7F /* LandMarkRow.swift */,
 				066D1B592BEDF7F500ACC1FE /* LandmarkList.swift */,
+				066D1B5B2BEDFB0D00ACC1FE /* LandmarkDetail.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
