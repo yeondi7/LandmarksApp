@@ -9,16 +9,19 @@ import SwiftUI
 import MapKit
 
 struct MapView: View {
+    var coordinate: CLLocationCoordinate2D
+    
     var body: some View {
         Map(initialPosition: .region(region))
         //map camera position이 속성이래...
     }
     
     private var region: MKCoordinateRegion {
-        MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 34.011286, longitude: -116.166868), span: MKCoordinateSpan(latitudeDelta: 0.2, longitudeDelta: 0.2))
+        MKCoordinateRegion(center: coordinate, span: MKCoordinateSpan(latitudeDelta: 0.2, longitudeDelta: 0.2))
     }
 }
 
 #Preview {
-    MapView()
+    MapView(coordinate: CLLocationCoordinate2D(latitude: 34.011286, longitude: -116.166868 ))
+    //34.011286, 116.166868
 }

@@ -11,7 +11,7 @@ import CoreLocation
 
 //Hashable : 아이템 간에 구분하는거
 //identifiable 최종!!
-struct Landmark: Codable {
+struct Landmark: Codable, Identifiable {
     var id: Int
     var name: String
     var park: String

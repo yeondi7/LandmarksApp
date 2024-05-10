@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  LandmarkDetail.swift
 //  LandmarksApp
 //
 //  Created by 김연지 on 5/10/24.
@@ -7,14 +7,15 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct LandmarkDetail: View {
+    var landmark:Landmark
     var body: some View {
         VStack{
-            MapView()
+            MapView(coordinate: landmark.locationCoodinate)
                 .frame(height:300)
             CircleImage()
                 .offset(y:-130)
-               // .background(.blue) : 원의 원래 위치 값보기
+            // .background(.blue) : 원의 원래 위치 값보기
                 .padding(.bottom, -130)
         }
         VStack(alignment: .leading) {
@@ -41,5 +42,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    LandmarkDetail(landmark: landmarks[0])
 }
